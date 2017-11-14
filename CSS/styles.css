@@ -1,0 +1,178 @@
+
+
+/* THIS IS THE RIGHT STYLESHEET!!! */
+
+
+
+/* styling for big-screen navbar */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: crimson;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+    li {
+    float: left;    
+    font-size: 150%;
+}
+
+@media (max-width:800px) {
+
+li { 
+  float: left;    
+    font-size: 90%;}
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover:not(.active) {background-color: #111;}
+
+ li a.active {background-color: blue;}
+
+ li.right {float: right;}
+
+
+
+ /* styling for dropdown navbar */
+
+.navbar {
+    
+    background-color: crimson;
+    position: fixed;
+    top:0%;
+    width: 100%;
+   }
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* styling for dropdown navbar */
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;}
+
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover:not(.active) {background-color: #111;}
+
+ .navbar a.active {background-color: blue;}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: crimson;
+    min-width: 160px;
+    
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #111;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;}
+
+
+ /*media queries for switching between navbars */
+
+ @media (min-width:800px) {
+    .navbar {display:none;}
+ }
+
+ @media (max-width:799px) {
+    .navhead {display:none;}
+ }
+
+
+
+* {box-sizing: border-box;}
+
+
+body {background-color: gainsboro;}
+
+h3 {font-size: 250%;}
+
+
+
+
+.banner {
+    background-color: blue;
+    color:black;
+    border:5px solid grey;
+    
+        }
+
+.newspage {
+    float: left;
+    padding-right: 30px;
+
+    border-image: 5px black;
+}
+
+.links {
+    display:auto;   
+    }
+      
+
+
+
+.stories {
+    background-color: crimson;
+    color:black;
+    border:5px solid grey;
+    padding:10px;
+    max-width: 100%;
+    margin: 20px 120px 40px 120px;
+    font-size:125%;
+}
+
+/*adjusting field size for small screens news page */
+
+@media (min-width:10px) and (max-width:800px) {
+
+.stories { 
+  position:none; margin: 20px 10px 40px 10px ; 
+}
+
+
+
